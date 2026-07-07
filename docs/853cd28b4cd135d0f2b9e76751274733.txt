@@ -1,0 +1,566 @@
+SMART BHARAT
+
+Information Architecture (IA) & User Flow Documentation
+
+Version 1.0
+
+
+---
+
+1. Overview
+
+Smart Bharat is an AI-powered civic platform that enables citizens to discover government services, apply for schemes, report civic issues, manage documents, and track applications from a single unified dashboard.
+
+This document focuses on the Information Architecture (IA) and User Navigation Flows for the web application.
+
+
+---
+
+2. Navigation Structure
+
+The application follows a dashboard-centric navigation model where every major citizen task is accessible within 2–4 clicks.
+
+Top Navigation
+
+--------------------------------------------------------------
+
+Dashboard
+
+Government Services
+
+Government Schemes
+
+Report Issues
+
+Track
+
+Documents
+
+Notifications
+
+Profile
+
+--------------------------------------------------------------
+
+
+---
+
+3. Information Architecture
+
+Smart Bharat
+│
+├── Dashboard
+│   ├── Overview
+│   ├── Quick Actions
+│   ├── Continue Applications
+│   ├── Recommended Schemes
+│   ├── Active Complaints
+│   ├── Recent Notifications
+│   └── Saved Services
+│
+├── Government Services
+│   ├── All Services
+│   ├── Categories
+│   │   ├── Identity Services
+│   │   ├── Certificates
+│   │   ├── Licenses
+│   │   ├── Health
+│   │   ├── Education
+│   │   ├── Employment
+│   │   ├── Tax & Finance
+│   │   └── Business
+│   │
+│   ├── Popular Services
+│   ├── Eligibility Checker
+│   ├── Required Documents
+│   └── Apply
+│
+├── Government Schemes
+│   ├── Recommended Schemes
+│   ├── Browse Schemes
+│   ├── Eligibility
+│   ├── Benefits
+│   └── Apply
+│
+├── Report Issues
+│   ├── Report New Issue
+│   ├── My Complaints
+│   ├── Complaint History
+│   └── Issue Map
+│
+├── Track
+│   ├── Applications
+│   ├── Complaints
+│   ├── Service Requests
+│   └── Status Timeline
+│
+├── Documents
+│   ├── My Documents
+│   ├── Upload Documents
+│   ├── Required Documents
+│   └── Shared Documents
+│
+├── Notifications
+│
+└── Profile
+    ├── Personal Information
+    ├── Accessibility
+    ├── Language
+    ├── Linked IDs
+    └── Settings
+
+
+---
+
+4. Dashboard Structure
+
+The Dashboard acts as the central hub of the application.
+
+---------------------------------------------------------
+
+Welcome Back
+
+Global Search
+
+---------------------------------------------------------
+
+Quick Actions
+
+[ Apply for Service ]
+
+[ Explore Schemes ]
+
+[ Report Issue ]
+
+[ Track Status ]
+
+[ Upload Documents ]
+
+---------------------------------------------------------
+
+Continue Applications
+
+---------------------------------------------------------
+
+Recommended Government Schemes
+
+---------------------------------------------------------
+
+Active Complaints
+
+---------------------------------------------------------
+
+Recent Notifications
+
+---------------------------------------------------------
+
+Saved Services
+
+---------------------------------------------------------
+
+
+---
+
+5. User Flows
+
+
+---
+
+5.1 Apply for a Government Service
+
+Goal: Apply for any government service.
+
+Dashboard
+
+↓
+
+Government Services
+
+↓
+
+Select Service
+
+↓
+
+Service Details
+
+↓
+
+Eligibility
+
+↓
+
+Required Documents
+
+↓
+
+Application Form
+
+↓
+
+Review
+
+↓
+
+Submit
+
+
+---
+
+5.2 Explore Government Schemes
+
+Goal: Find and apply for eligible government schemes.
+
+Dashboard
+
+↓
+
+Government Schemes
+
+↓
+
+Browse / Recommended
+
+↓
+
+Scheme Details
+
+↓
+
+Eligibility
+
+↓
+
+Required Documents
+
+↓
+
+Apply
+
+
+---
+
+5.3 Report a Civic Issue
+
+Goal: Submit a complaint regarding public infrastructure.
+
+Dashboard
+
+↓
+
+Report Issues
+
+↓
+
+Report New Issue
+
+↓
+
+Select Issue Type
+
+↓
+
+Add Location
+
+↓
+
+Upload Photo
+
+↓
+
+Review
+
+↓
+
+Submit
+
+
+---
+
+5.4 Track Government Application
+
+Goal: Check the status of submitted applications.
+
+Dashboard
+
+↓
+
+Track
+
+↓
+
+Applications
+
+↓
+
+Application Details
+
+↓
+
+Status Timeline
+
+
+---
+
+5.5 Track Complaint
+
+Goal: Monitor complaint progress.
+
+Dashboard
+
+↓
+
+Track
+
+↓
+
+Complaints
+
+↓
+
+Complaint Details
+
+↓
+
+Status Timeline
+
+
+---
+
+5.6 Upload Documents
+
+Goal: Store documents for future applications.
+
+Dashboard
+
+↓
+
+Documents
+
+↓
+
+Upload Documents
+
+↓
+
+Select Document Type
+
+↓
+
+Upload File
+
+↓
+
+Confirmation
+
+
+---
+
+5.7 Resume Application
+
+Goal: Continue an unfinished application.
+
+Dashboard
+
+↓
+
+Continue Applications
+
+↓
+
+Resume Application
+
+↓
+
+Review
+
+↓
+
+Submit
+
+
+---
+
+5.8 View Notifications
+
+Goal: Read updates from the government or application system.
+
+Dashboard
+
+↓
+
+Notifications
+
+↓
+
+Notification Details
+
+
+---
+
+5.9 Manage Documents
+
+Goal: View and organize uploaded documents.
+
+Dashboard
+
+↓
+
+Documents
+
+↓
+
+My Documents
+
+↓
+
+Select Document
+
+↓
+
+View
+
+↓
+
+Download / Share
+
+
+---
+
+5.10 Manage Profile
+
+Goal: Update personal preferences.
+
+Dashboard
+
+↓
+
+Profile
+
+↓
+
+Settings
+
+↓
+
+Language / Accessibility
+
+↓
+
+Save Changes
+
+
+---
+
+6. Navigation Matrix
+
+User Goal	Navigation Path
+
+Apply for a Service	Dashboard → Government Services → Service → Apply
+Browse Government Schemes	Dashboard → Government Schemes → Browse
+Report a Civic Issue	Dashboard → Report Issues → Report New Issue
+Track Application	Dashboard → Track → Applications
+Track Complaint	Dashboard → Track → Complaints
+Upload Documents	Dashboard → Documents → Upload Documents
+View Notifications	Dashboard → Notifications
+Resume Application	Dashboard → Continue Applications
+View Documents	Dashboard → Documents → My Documents
+Update Profile	Dashboard → Profile
+
+
+
+---
+
+7. Dashboard Quick Actions
+
+The dashboard provides one-click access to the platform's most frequently used features.
+
+Quick Action	Destination
+
+Apply for Service	Government Services
+Explore Schemes	Government Schemes
+Report Issue	Report Issues
+Track Status	Track
+Upload Documents	Documents
+
+
+
+---
+
+8. Screen Hierarchy
+
+Dashboard
+│
+├── Apply for Service
+│
+├── Explore Schemes
+│
+├── Report Issue
+│
+├── Track Status
+│
+├── Upload Documents
+│
+├── Continue Applications
+│
+├── Recommended Schemes
+│
+├── Active Complaints
+│
+└── Notifications
+
+
+---
+
+9. Design Principles
+
+Dashboard-first navigation to centralize user activity.
+
+Maximum of 2–4 clicks to complete primary tasks.
+
+Simple, shallow hierarchy to reduce confusion.
+
+Consistent layout across all modules for familiarity.
+
+Clear task-oriented navigation instead of department-based navigation.
+
+Persistent top navigation for easy access to all core sections.
+
+Personalized dashboard highlighting ongoing activities and recommendations.
+
+
+
+---
+
+10. Primary User Journey
+
+Login
+
+↓
+
+Dashboard
+
+↓
+
+Choose Task
+│
+├── Government Services
+├── Government Schemes
+├── Report Issue
+├── Track Status
+├── Documents
+└── Profile
+
+↓
+
+Complete Action
+
+↓
+
+Track Progress
+
+↓
+
+Receive Notifications
+
+This IA is suitable for a professional PRD, UX case study, or hackathon presentation, providing a clean, scalable structure for the Smart Bharat web application.
