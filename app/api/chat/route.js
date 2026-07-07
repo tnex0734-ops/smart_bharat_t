@@ -1,7 +1,9 @@
 import Groq from "groq-sdk";
 
+export const dynamic = 'force-dynamic';
+
 const groq = new Groq({
-  apiKey: process.env.GROQ_API_KEY,
+  apiKey: process.env.GROQ_API_KEY || "dummy_key_for_build",
 });
 
 const SYSTEM_PROMPT = `You are Smart Bharat AI, a GenAI-powered Civic Companion helping Indian citizens discover, understand, apply for, track, and manage government services. You are built into the Smart Bharat platform — a unified digital interface for citizen-government interactions.

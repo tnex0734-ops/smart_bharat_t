@@ -1,7 +1,9 @@
 import Groq from "groq-sdk";
 
+export const dynamic = 'force-dynamic';
+
 const groq = new Groq({
-  apiKey: process.env.GROQ_API_KEY,
+  apiKey: process.env.GROQ_API_KEY || "dummy_key_for_build",
 });
 
 const SYSTEM_PROMPT = `You are a Smart Search & Extraction Agent for the Smart Bharat civic platform. Your job is to classify the user's search query and extract any relevant personal/form data.
